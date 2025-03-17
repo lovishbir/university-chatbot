@@ -135,7 +135,39 @@ export const GlobalStyles = createGlobalStyle`
     border-width: 0;
   }
   
+
   @media (max-width: 768px) {
     .university-header {
       flex-direction: column;
-      
+      align-items: flex-start;
+      gap: 15px;
+    }
+    
+    .main-nav ul {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .university-header h1 {
+      font-size: 1.5rem;
+    }
+    
+    .hero-content h2 {
+      font-size: 1.6rem;
+    }
+    
+    .content-section h2 {
+      font-size: 1.4rem;
+    }
+  }
+`;
